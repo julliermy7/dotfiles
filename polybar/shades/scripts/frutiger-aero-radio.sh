@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Caminho para o tema do Rofi
-theme="$HOME/.config/polybar/shades/scripts/rofi/radio.rasi"
+theme="$HOME/dotfiles/polybar/shades/scripts/rofi/radio.rasi"
 
 # add more args here according to preference
 ARGS="--no-video"

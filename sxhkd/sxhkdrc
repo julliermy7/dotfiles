@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show drun -theme ~/.config/polybar/shades/scripts/rofi/launcher.rasi
+	rofi -show drun -theme ~/dotfiles/polybar/shades/scripts/rofi/launcher.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -20,7 +20,7 @@ super + b
 
 # Mudar papel de parede
 super + z
-  ~/.config/feh/wallchange.sh
+  ~/dotfiles/feh/wallchange.sh
 
 # Abrir explorer
 alt + e
@@ -35,11 +35,11 @@ alt + l
 
 # Powermenu
 super + p
-  ~/.config/polybar/shades/scripts/powermenu.sh
+  ~/dotfiles/polybar/shades/scripts/powermenu.sh
 
 # Radio
 super + r
-  ~/.config/polybar/shades/scripts/radio.sh
+  ~/dotfiles/polybar/shades/scripts/radio.sh
 
 # BetterLockScreen
 ctrl + alt + l

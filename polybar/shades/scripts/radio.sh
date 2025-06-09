@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Caminho para o tema do Rofi
-theme="$HOME/.config/polybar/shades/scripts/rofi/radio.rasi"
+theme="$HOME/dotfiles/polybar/shades/scripts/rofi/radio.rasi"
 
 menu(){
     printf "1. lofi\n"
@@ -26,13 +26,13 @@ main() {
 
     case "$choice" in
         "1. lofi")
-            $HOME/.config/polybar/shades/scripts/rofi-radio.sh
+            $HOME/dotfiles/polybar/shades/scripts/rofi-radio.sh
             ;;
         "2. ambient")
-            $HOME/.config/polybar/shades/scripts/ambient-radio.sh
+            $HOME/dotfiles/polybar/shades/scripts/ambient-radio.sh
             ;;
         "3. frutiger aero")
-            $HOME/.config/polybar/shades/scripts/frutiger-aero-radio.sh
+            $HOME/dotfiles/polybar/shades/scripts/frutiger-aero-radio.sh
             ;;
         *)
             echo "Invalid choice"

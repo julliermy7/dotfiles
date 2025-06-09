@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 1️⃣ Escolhe um wallpaper aleatório
-WALLPAPER=$(find ~/Imagens/wallpapers -type f | shuf -n1)
+WALLPAPER=$(find ~/dotfiles/wallpapers -type f | shuf -n1)
 
 # 2️⃣ Define o wallpaper com o feh
 feh --bg-fill "$WALLPAPER"

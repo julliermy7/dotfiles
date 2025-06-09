@@ -1,4 +1,4 @@
-dir="~/.config/polybar/shades/scripts/rofi"
+dir="~/dotfiles/polybar/shades/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
