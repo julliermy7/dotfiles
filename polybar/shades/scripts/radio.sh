@@ -7,6 +7,7 @@ menu(){
     printf "1. lofi\n"
     printf "2. ambient\n"
     printf "3. frutiger aero\n"
+    printf "  Parar rádio"
 }
 
 get_choice() {
@@ -33,6 +34,9 @@ main() {
             ;;
         "3. frutiger aero")
             $HOME/dotfiles/polybar/shades/scripts/frutiger-aero-radio.sh
+            ;;
+        "  Parar rádio")
+            pkill -f radio-mpv || main
             ;;
         *)
             echo "Invalid choice"
