@@ -23,6 +23,7 @@ ln -sf ~/dotfiles/picom ~/.config/picom
 ln -sf ~/dotfiles/feh ~/.config/feh
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/wallpapers ~/Imagens/wallpapers
+ln -sf ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
 
 echo "Symlinks criados com sucesso!"
 
