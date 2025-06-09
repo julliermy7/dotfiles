@@ -6,7 +6,10 @@ export ZSH="$HOME/dotfiles/.oh-my-zsh"
 
 export MOZ_ENABLE_WAYLAND=0
 
+# Alias
 alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox'
+alias update='sudo dnf upgrade'
+alias fetch='fastfetch'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
