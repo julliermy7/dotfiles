@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/dotfiles/.oh-my-zsh"
 
 export MOZ_ENABLE_WAYLAND=0
 
@@ -109,11 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Abrir o pfetch
-export PF_INFO="ascii title os kernel uptime memory shell wm"
-export PF_ASCII="fedora"
-export PF_COL1=4
-export PF_COL2=6
-pfetch
+# Abrir o fastfetch
+fastfetch
 
-source /home/julliermy/stuff/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
