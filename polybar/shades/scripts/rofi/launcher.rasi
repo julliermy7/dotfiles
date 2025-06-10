@@ -7,7 +7,7 @@ configuration {
     disable-history:                false;
     fullscreen:                     false;
 	hide-scrollbar: 				true;
-	sidebar-mode: 					false;
+	sidebar-mode: 				  false;
 }
 
 @import "colors.rasi"
@@ -28,12 +28,14 @@ window {
 prompt {
     enabled: 						true;
 	padding: 						10px 15px 10px 15px;
-	background-color: 				@bg1;
+	background-color: 				@bg;
 	text-color: 					#FFFFFF;
 	font:							"Iosevka Nerd Font 12";
 }
 
 entry {
+    border: 3px;
+    border-color: @bg4;
     background-color:               @bg2;
     text-color:                     #FFFFFF;
     placeholder-color:              #FFFFFF;
