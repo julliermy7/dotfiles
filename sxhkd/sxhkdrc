@@ -45,6 +45,11 @@ super + r
 ctrl + alt + l
   betterlockscreen --lock blur
 
+# Abrir o ncmpcpp
+super + alt + m
+  alacritty --class ncmpcpp -o window.dimensions.columns=60 -o window.dimensions.lines=20 -e ncmpcpp
+
+
 # Teclas Multimidia
 
 # Aumentar volume
