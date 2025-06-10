@@ -49,7 +49,6 @@ ctrl + alt + l
 super + alt + m
   alacritty --class ncmpcpp -o window.dimensions.columns=70 -o window.dimensions.lines=15 -e ncmpcpp
 
-
 # Teclas Multimidia
 
 # Aumentar volume
@@ -64,6 +63,22 @@ XF86AudioLowerVolume
     volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -o '[0-9]*%' | head -1) && \
     notify-send -r 9999 "Volume diminuído" "Volume atual: $volume"
 
+# Parar ou desparar música
+XF86AudioPlay
+  mpc toggle
+
+# Avançar música
+XF86AudioNext
+  mpc next
+
+# Voltar música
+XF86AudioPrev
+  mpc prev
+
+# Parar música
+XF86AudioStop
+  mpc stop
+
 # Mutar/Desmutar volume
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle && \
@@ -74,6 +89,7 @@ XF86AudioMute
         volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -o '[0-9]*%' | head -1) && \
         notify-send -r 9999 "Volume" "Volume desmutado: $volume"; \
     fi
+
 # Aumentar brilho
 XF86MonBrightnessUp
     brightnessctl set +10% && \
