@@ -28,6 +28,9 @@ betterlockscreen -u "$WALLPAPER" --fx blur
 # Inicia o MPD
 pgrep -x mpd > /dev/null || mpd --no-daemon &
 
+# Inicia o mpdscribble
+mpdscribble &
+
 # Cursor
 xsetroot -cursor_name left_ptr &
 

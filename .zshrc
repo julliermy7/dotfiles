@@ -11,6 +11,12 @@ alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox'
 alias update='sudo dnf upgrade'
 alias fetch='fastfetch'
 
+# Função para o spotdl
+spot() {
+  local BASE_DIR=~/Músicas/music
+  spotdl "$1" --bitrate 320k --output "$BASE_DIR/$2"
+}
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
