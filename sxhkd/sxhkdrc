@@ -47,7 +47,7 @@ ctrl + alt + l
 
 # Abrir o ncmpcpp
 super + alt + m
-  alacritty --class ncmpcpp -o window.dimensions.columns=60 -o window.dimensions.lines=20 -e ncmpcpp
+  alacritty --class ncmpcpp -o window.dimensions.columns=70 -o window.dimensions.lines=15 -e ncmpcpp
 
 
 # Teclas Multimidia
