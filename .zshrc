@@ -7,8 +7,9 @@ export ZSH="$HOME/dotfiles/.oh-my-zsh"
 export MOZ_ENABLE_WAYLAND=0
 
 # Alias
-alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox'
-alias update='sudo dnf upgrade'
+alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox &'
+alias upd='sudo dnf upgrade'
+alias ins='sudo dnf install'
 alias fetch='fastfetch'
 
 # Função para o spotdl
