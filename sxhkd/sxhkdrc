@@ -49,6 +49,10 @@ ctrl + alt + l
 super + alt + m
   alacritty --class ncmpcpp -o window.dimensions.columns=70 -o window.dimensions.lines=15 -e ncmpcpp
 
+# Escolher wallpaper
+super + alt + w
+   ~/dotfiles/polybar/shades/scripts/change-wallpaper.sh 
+
 # Teclas Multimidia
 
 # Aumentar volume

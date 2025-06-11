@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Caminho para o tema do Rofi
-theme="$HOME/.config/polybar/shades/scripts/rofi/bluetooth.rasi"
+theme="$HOME/dotfiles/polybar/shades/scripts/rofi/bluetooth.rasi"
 
 # Constants
 divider="---------"
