@@ -50,8 +50,12 @@ super + alt + m
   alacritty --class ncmpcpp -o window.dimensions.columns=70 -o window.dimensions.lines=15 -e ncmpcpp
 
 # Escolher wallpaper
-super + alt + w
+ctrl + alt + w
    ~/dotfiles/polybar/shades/scripts/change-wallpaper.sh 
+
+# Abrir fastfetch
+super + f
+  alacritty --class fastfetch -o window.dimensions.columns=60 -o window.dimensions.lines=10 -e sh -c "fastfetch; read -n 1"
 
 # Teclas Multimidia
 

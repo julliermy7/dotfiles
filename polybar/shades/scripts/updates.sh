@@ -29,7 +29,7 @@ while true; do
 
     # Quando houver atualizações, verifica a cada 10 segundos
     while (( UPDATES > 0 )); do
-        echo " $UPDATES"
+        echo " $UPDATES "
         sleep 10
         get_total_updates
     done

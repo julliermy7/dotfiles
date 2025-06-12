@@ -31,10 +31,17 @@ pgrep -x mpd > /dev/null || mpd --no-daemon &
 # Inicia o mpdscribble
 pgrep -x mpdscribble > /dev/null || mpdscribble &
 
+# Inicia o musnify-mpd
+pgrep -x musnify-mpd > /dev/null || musnify-mpd &
+
 # Cursor
 xsetroot -cursor_name left_ptr &
 
 bspc monitor -d I II III
+
+bspc config pointer_action1 move 
+bspc config pointer_action2 resize_side 
+bspc config pointer_action2 resize_corner 
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -52,4 +59,4 @@ bspc config presel_feedback_color "$color1"
 bspc config focus_follows_pointer true
 
 bspc rule -a ncmpcpp state=floating center=on rectangle=80x24+center
-
+bspc rule -a fastfetch state=floating center=on
