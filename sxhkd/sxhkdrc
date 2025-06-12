@@ -54,7 +54,7 @@ ctrl + alt + w
    ~/dotfiles/polybar/shades/scripts/change-wallpaper.sh 
 
 # Abrir fastfetch
-super + f
+alt + f
   alacritty --class fastfetch -o window.dimensions.columns=60 -o window.dimensions.lines=10 -e sh -c "fastfetch; read -n 1"
 
 # Teclas Multimidia
