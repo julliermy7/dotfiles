@@ -46,7 +46,9 @@ select_wallpaper() {
             dunst &
             pywalfox update
             betterlockscreen -u "$selected_file" --fx blur
-            break
+            pkill -f musnify-mpd
+            sleep 1
+            musnify-mpd &
         fi
     done
 }
