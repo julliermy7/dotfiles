@@ -16,7 +16,7 @@ super + Escape
 
 # Firefox
 super + b
-  env MOZ_ENABLE_WAYLAND=0 firefox &
+  firefox
 
 # Mudar papel de parede
 super + z

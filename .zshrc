@@ -10,7 +10,9 @@ export MOZ_ENABLE_WAYLAND=0
 alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox &'
 alias upd='sudo dnf upgrade'
 alias ins='sudo dnf install'
+alias rem='sudo dnf remove'
 alias fetch='fastfetch'
+alias flaupd='flatpak update'
 
 # Função para o spotdl
 spot() {
@@ -120,3 +122,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
