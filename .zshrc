@@ -16,7 +16,7 @@ alias flaupd='flatpak update'
 
 # Função para o spotdl
 spot() {
-  local BASE_DIR=~/Músicas/music
+  local BASE_DIR=~/Músicas/music/artists/
   spotdl "$1" --bitrate 320k --output "$BASE_DIR/$2"
 }
 
