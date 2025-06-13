@@ -1,41 +1,7 @@
 #!/usr/bin/sh
 
-# Wallpaper
-~/dotfiles/feh/wallchange-startup.sh
-
-# Cores do pywal
-source "$HOME/.cache/wal/colors.sh"
-
-# Dunst
-killall dunst
-dunst &
-
-# PywalFox
-pywalfox update
-
-# Polybar
-bash ~/.config/polybar/launch.sh --shades
-
-# Teclas
-sxhkd &
-
-# Picom
-picom &
-
-# BetterLockScreen
-betterlockscreen -u "$WALLPAPER" --fx blur
-
-# Inicia o MPD
-pgrep -x mpd > /dev/null || mpd --no-daemon &
-
-# Inicia o mpdscribble
-pgrep -x mpdscribble > /dev/null || mpdscribble &
-
-# Inicia o musnify-mpd
-pgrep -x musnify-mpd > /dev/null || musnify-mpd &
-
-# Cursor
-xsetroot -cursor_name left_ptr &
+# Iniciando os scripts
+~/.config/bspwm/autostart.sh &
 
 bspc monitor -d I II III
 

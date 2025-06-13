@@ -19,7 +19,5 @@ pywalfox update
 # BetterLockScreen
 betterlockscreen -u "$WALLPAPER" --fx blur
 
-# Reinicia musnify-mpd depois de atualizar tudo
-pkill -f musnify-mpd
-sleep 1
-musnify-mpd &
+# Mudar cor do zathura
+zathura-pywal
