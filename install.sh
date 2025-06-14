@@ -22,8 +22,10 @@ ln -sf ~/dotfiles/bspwm ~/.config/bspwm
 ln -sf ~/dotfiles/picom ~/.config/picom
 ln -sf ~/dotfiles/feh ~/.config/feh
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.xinitrc ~/.xinitrc
 ln -sf ~/dotfiles/wallpapers ~/Imagens/wallpapers
 ln -sf ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
+ln -sf ~/dotfiles/cava ~/.config/cava
 
 echo "Symlinks criados com sucesso!"
 

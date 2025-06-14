@@ -13,6 +13,13 @@ wal -i "$WALLPAPER"
 killall dunst
 dunst &
 
+# Cava
+~/dotfiles/cava/pywal.sh &
+
+# Polybar
+xrdb -merge ~/.Xresources
+polybar-msg cmd restart
+
 # PywalFox
 pywalfox update
 

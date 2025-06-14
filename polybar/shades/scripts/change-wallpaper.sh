@@ -44,6 +44,9 @@ select_wallpaper() {
             wal -i "$selected_file"
             killall dunst
             dunst &
+            ~/dotfiles/cava/pywal.sh &
+            xrdb -merge ~/.Xresources
+            polybar-msg cmd restart
             pywalfox update
             betterlockscreen -u "$selected_file" --fx blur
             zathura-pywal
