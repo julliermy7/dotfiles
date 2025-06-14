@@ -3,7 +3,7 @@
 # Iniciando os scripts
 ~/.config/bspwm/autostart.sh &
 
-bspc monitor -d I II III
+bspc monitor -d I II III IV V
 
 bspc config pointer_action1 move 
 bspc config pointer_action2 resize_side 
