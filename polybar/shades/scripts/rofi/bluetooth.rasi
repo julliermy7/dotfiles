@@ -61,7 +61,7 @@ inputbar {
     expand:                         false;
 	border:							0px;
     border-radius:                  0px;
-	border-color:					@ac;
+	border-color:					@fg;
     spacing:                        0px;
 }
 

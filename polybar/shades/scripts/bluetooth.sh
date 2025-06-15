@@ -3,6 +3,7 @@
 # Caminho para o tema do Rofi
 theme="$HOME/dotfiles/polybar/shades/scripts/rofi/bluetooth.rasi"
 
+
 # Constants
 divider="---------"
 goback="Back"
@@ -291,7 +292,7 @@ show_menu() {
 }
 
 # Rofi command to pipe into, can add any options here
-rofi_command="rofi -dmenu $* -p -theme "$theme""
+rofi_command="rofi -dmenu -theme "$theme" $* -p"
 
 case "$1" in
     --status)
@@ -301,3 +302,4 @@ case "$1" in
         show_menu
         ;;
 esac
+

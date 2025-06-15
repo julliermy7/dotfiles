@@ -57,6 +57,10 @@ ctrl + alt + w
 alt + f
   alacritty --class fastfetch -o window.dimensions.columns=60 -o window.dimensions.lines=10 -e sh -c "fastfetch; read -n 1"
 
+# Menu bluetooth
+super + alt + b
+  ~/dotfiles/polybar/shades/scripts/bluetooth.sh
+
 # Teclas Multimidia
 
 # Aumentar volume
