@@ -3,13 +3,16 @@
 # Parar em caso de erro
 set -e
 
+echo "Instalando aplicativos e dependências..."
+
 # Instalação de apps
-sudo dnf install -y alacritty nvim polybar dunst fastfetch sxhkd bspwm picom feh zsh python3-pip ImageMagick procps-ng
+sudo dnf install -y alacritty nvim polybar dunst cava fastfetch sxhkd bspwm picom feh zsh python3-pip ImageMagick procps-ng
 
 sudo pip3 install pywal
 
-# Cria a pasta de wallpapers
-mkdir -p ~/Imagens/wallpapers
+echo "Instalação concluida com sucesso."
+
+echo "Criando os symlinks..."
 
 # Criação dos symlinks
 ln -sf ~/dotfiles/alacritty ~/.config/alacritty
@@ -29,3 +32,4 @@ ln -sf ~/dotfiles/cava ~/.config/cava
 
 echo "Symlinks criados com sucesso!"
 
+echo "Dotfiles instalado com sucesso."

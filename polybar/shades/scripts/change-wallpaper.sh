@@ -32,7 +32,7 @@ select_wallpaper() {
         selected_file="$dir/$selected"
 
         # Preview temporário
-        feh --title "PreviewWallpaper" --zoom fill "$selected_file" &
+        feh --title "PreviewWallpaper" "$selected_file" &
         feh_pid=$!
         sleep 1
 
@@ -50,6 +50,7 @@ select_wallpaper() {
             pywalfox update
             betterlockscreen -u "$selected_file" --fx blur
             zathura-pywal
+            exit 0
         fi
     done
 }
