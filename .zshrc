@@ -12,7 +12,8 @@ alias upd='sudo dnf upgrade'
 alias ins='sudo dnf install'
 alias rem='sudo dnf remove'
 alias fetch='fastfetch'
-alias flaupd='flatpak update'
+alias flatupd='flatpak update'
+alias vim='nvim'
 
 # Função para o spotdl
 spot() {
