@@ -14,6 +14,12 @@ alias rem='sudo dnf remove'
 alias fetch='fastfetch'
 alias flaupd='flatpak update'
 
+# Alias git
+alias gs='git status'
+alias gc='git commit -m'
+alias ga='git add .'
+alias gp='git push'
+
 # Função para o spotdl
 spot() {
   local BASE_DIR=~/Músicas/music/artists/
