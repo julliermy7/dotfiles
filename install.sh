@@ -5,7 +5,8 @@ set -e
 
 echo "Instalando aplicativos e dependências..."
 
-# Instalação de apps
+# Atualização do sistema e instalação de apps
+sudo dnf upgrade -y
 sudo dnf install -y alacritty nvim polybar dunst cava fastfetch sxhkd bspwm picom feh zsh python3-pip ImageMagick procps-ng
 
 sudo pip3 install pywal

@@ -3,7 +3,7 @@
 export PATH="$HOME/.local/bin:$PATH"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/dotfiles/.oh-my-zsh"
-
+export EDITOR=nvim
 export MOZ_ENABLE_WAYLAND=0
 
 # Alias

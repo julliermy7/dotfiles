@@ -26,6 +26,10 @@ super + z
 alt + e
   thunar
 
+# Yazi
+super + e
+  alacritty -e yazi
+
 # Flameshot
 Print
   flameshot gui
