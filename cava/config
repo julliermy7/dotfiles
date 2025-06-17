@@ -160,14 +160,14 @@ alacritty_sync = 1
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 gradient_count = 8
-gradient_color_1 = '#5062A1'
-gradient_color_2 = '#4E67B1'
-gradient_color_3 = '#5171CE'
-gradient_color_4 = '#6C88B6'
-gradient_color_5 = '#6290D2'
-gradient_color_6 = '#8DA4DB'
-gradient_color_7 = '#ced3e3'
-gradient_color_8 = '#90939e'
+gradient_color_1 = '#D0A44E'
+gradient_color_2 = '#ADD278'
+gradient_color_3 = '#0173B8'
+gradient_color_4 = '#A2A2A1'
+gradient_color_5 = '#F8A391'
+gradient_color_6 = '#BAD3DD'
+gradient_color_7 = '#e9e4e0'
+gradient_color_8 = '#a39f9c'
 
 
 
