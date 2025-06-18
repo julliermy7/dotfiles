@@ -7,7 +7,7 @@ echo "Instalando aplicativos e dependências..."
 
 # Atualização do sistema e instalação de apps
 sudo dnf upgrade -y
-sudo dnf install -y alacritty nvim polybar dunst cava fastfetch sxhkd bspwm picom feh zsh python3-pip ImageMagick procps-ng
+sudo dnf install -y alacritty neovim polybar dunst cava fastfetch sxhkd bspwm picom mpd ncmpcpp feh zsh python3-pip ImageMagick procps-ng
 
 sudo pip3 install pywal
 

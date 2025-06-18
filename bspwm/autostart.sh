@@ -4,7 +4,6 @@
 WALL="$HOME/dotfiles/wallpapers/anime/perfectblue.jpg"
 feh --bg-fill "$WALL"
 wal -i "$WALL"
-source "$HOME/.cache/wal/colors.sh"
 
 # Notificações
 killall dunst

@@ -6,7 +6,5 @@ setterm -blank 0 -powerdown 0
 # turn off black Screensaver
 xset s off
 
-xset b off
-
 exec dbus-launch --exit-with-session bspwm
-
+xset b off

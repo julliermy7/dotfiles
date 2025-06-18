@@ -3,6 +3,8 @@
 # Iniciando os scripts
 ~/.config/bspwm/autostart.sh &
 
+source "$HOME/.cache/wal/colors.sh"
+
 bspc monitor -d I II III IV V
 
 bspc config pointer_action1 move 
