@@ -18,7 +18,7 @@ window {
     text-color:                     @fg;
 	border:							3px;
 	border-color:					@bg4;
-    border-radius:                  15px;
+    border-radius:                  0px;
 	width:							500px;
     location:                       center;
     x-offset:                       0;
@@ -59,8 +59,8 @@ inputbar {
     background-color:               @bg2;
     text-color:                     #FFFFFF;
     expand:                         false;
-	border:							3px;
-    border-radius:                  15px;
+	border:							0px;
+    border-radius:                  0px;
 	border-color:					@bg4;
     spacing:                        0px;
 }

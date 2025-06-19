@@ -3,8 +3,8 @@
 export PATH="$HOME/.local/bin:$PATH"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/dotfiles/.oh-my-zsh"
+export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR=nvim
-export MOZ_ENABLE_WAYLAND=0
 
 # Alias
 alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox &'
@@ -19,6 +19,14 @@ alias vim='nvim'
 spot() {
   local BASE_DIR=~/Músicas/music/artists/
   spotdl "$1" --bitrate 320k --output "$BASE_DIR/$2"
+}
+
+# Função para o yt-dlp
+yt() {
+  local BASE_DIR=~/Músicas/music/artists/
+  mkdir -p "$BASE_DIR/$2"
+  yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 \
+         -o "$BASE_DIR/$2/%(title)s.%(ext)s" "$1"
 }
 
 # Set name of the theme to load --- if set to "random", it will

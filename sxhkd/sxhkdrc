@@ -28,7 +28,7 @@ alt + e
 
 # Yazi
 super + e
-  alacritty -e yazi
+   alacritty --class yazi -o window.dimensions.columns=75 -o window.dimensions.lines=18 -e yazi
 
 # Flameshot
 Print
@@ -49,12 +49,12 @@ super + r
 ctrl + alt + l
   betterlockscreen --lock blur
 
-# Abrir o ncmpcpp
+# Abrir o rmpc
 super + alt + m
-  alacritty --class ncmpcpp -o window.dimensions.columns=70 -o window.dimensions.lines=15 -e ncmpcpp
+    alacritty --class rmpc -o window.dimensions.columns=75 -o window.dimensions.lines=18 -e ~/.cargo/bin/rmpc
 
 # Escolher wallpaper
-ctrl + alt + w
+alt + shift + w
    ~/dotfiles/polybar/shades/scripts/change-wallpaper.sh 
 
 # Abrir fastfetch

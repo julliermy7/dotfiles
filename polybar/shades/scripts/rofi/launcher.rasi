@@ -13,16 +13,16 @@ configuration {
 @import "colors.rasi"
 
 window {
-    transparency:                   "real";
-    background-color:               @bg;
-    text-color:                     @fg;
+  transparency:                   "real";
+  background-color:               @bg;
+  text-color:                     @fg;
 	border:							3px;
 	border-color:					@bg4;
-    border-radius:                  15px;
+  border-radius:                  0px;
 	width:							550px;
-    location:                       center;
-    x-offset:                       0;
-    y-offset:                       0;
+  location:                       center;
+  x-offset:                       0;
+  y-offset:                       0;
 }
 
 prompt {

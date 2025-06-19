@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Wallpaper e pywal
-WALL="$HOME/dotfiles/wallpapers/anime/perfectblue.jpg"
+WALL="$HOME/dotfiles/wallpapers/estético/paint.png"
 feh --bg-fill "$WALL"
 wal -i "$WALL"
 
