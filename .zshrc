@@ -5,6 +5,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/dotfiles/.oh-my-zsh"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR=nvim
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Alias
 alias firefox='env MOZ_ENABLE_WAYLAND=0 firefox &'

@@ -4,9 +4,10 @@
 source "${HOME}/.cache/wal/colors.sh"
 
 # Atualiza as cores no dunstrc
-sed -i "s/background = \".*\"/background = \"${color0}\"/" ~/.config/dunst/dunstrc
-sed -i "s/foreground = \".*\"/foreground = \"${color7}\"/" ~/.config/dunst/dunstrc
-sed -i "s/frame_color = \".*\"/frame_color = \"${color1}\"/" ~/.config/dunst/dunstrc
+sed -i -E "s/^(background\s*=\s*\").*(\")/\1${color0}\2/" ~/.config/dunst/dunstrc
+sed -i -E "s/^(foreground\s*=\s*\").*(\")/\1${color7}\2/" ~/.config/dunst/dunstrc
+sed -i -E "s/^(frame_color\s*=\s*\").*(\")/\1${color1}\2/" ~/.config/dunst/dunstrc
+
 
 # Reinicia o dunst para aplicar as mudanças
 pkill dunst && dunst &
