@@ -1,0 +1,8 @@
+(systray
+  :spacing 5
+  :orientation "horizontal"           ; ou "vertical"
+  :space-evenly true                  ; distribuir igualmente
+  :icon-size 20                       ; tamanho dos ícones
+  :prepend-new true                   ; novos ícones à esquerda
+)
+
