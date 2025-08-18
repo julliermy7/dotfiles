@@ -50,6 +50,21 @@ yt() {
          -o "$BASE_DIR/$ARTIST/%(title)s.%(ext)s" "$URL"
 }
 
+# Gravar tela
+rec() {
+  local BASE_DIR=~/Vídeos/gravaçoes/
+  local FILENAME="$1"
+
+  # Se não passar nome, usa timestamp
+  if [[ -z "$FILENAME" ]]; then
+    FILENAME="$(date +'%Y-%m-%d_%H-%M-%S').mp4"
+  fi
+
+  wf-recorder \
+    --audio=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor \
+    --file="$BASE_DIR/$FILENAME"
+}
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # change cd to Z using zoxide

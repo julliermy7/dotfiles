@@ -26,7 +26,7 @@ python3 "$PYWAL_SUBLIME_SCRIPT" || {
 zathura-pywal &
 
 # Chromium theme
-~/stuff/pywalium/generate.sh
+~/dotfiles/wal/scripts/pywalium/generate.sh
 
 # Tema GTK
 oomox-cli ~/.cache/wal/colors-oomox
