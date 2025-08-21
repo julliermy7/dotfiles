@@ -25,11 +25,15 @@ python3 "$PYWAL_SUBLIME_SCRIPT" || {
 # Zathura color change
 zathura-pywal &
 
+# Telegram
+wal-telegram &
+
 # Chromium theme
 ~/dotfiles/wal/scripts/pywalium/generate.sh
 
 # Tema GTK
-oomox-cli ~/.cache/wal/colors-oomox
+oomox-cli -o "pywal-gtk" ~/.cache/wal/colors-oomox
+gsettings set org.gnome.desktop.interface gtk-theme "pywal-gtk"
 
 # Reload eww
 killall eww || echo "Warning: No eww process found"

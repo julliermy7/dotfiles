@@ -41,7 +41,7 @@ spot() {
 }
 
 # Função para baixar com yt-dlp
-yt() {
+ytmp3() {
   local BASE_DIR=~/Músicas/music/artists/
   local URL="$1"
   local ARTIST="$2"
@@ -49,6 +49,17 @@ yt() {
   yt-dlp --embed-metadata --embed-thumbnail --extract-audio --audio-format mp3 --audio-quality 0 \
          -o "$BASE_DIR/$ARTIST/%(title)s.%(ext)s" "$URL"
 }
+
+ytsample() {
+  local BASE_DIR=~/Downloads/
+  local URL="$1"
+  local ARTIST="$2"
+  mkdir -p "$BASE_DIR/$ARTIST"
+  yt-dlp --embed-metadata --embed-thumbnail --extract-audio --audio-format mp3 --audio-quality 0 \
+         -o "$BASE_DIR/$ARTIST/%(title)s.%(ext)s" "$URL"
+}
+
+
 
 # Gravar tela
 rec() {
