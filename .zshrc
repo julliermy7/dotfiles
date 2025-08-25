@@ -26,6 +26,7 @@ eval "$(thefuck --alias fuck)"
 alias ls="eza --color=always --long --git --no-permissions --icons=always"
 alias speed="speedtest-cli"
 alias y="yazi"
+alias up="sudo pacman -Syu"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 # Remove qualquer alias anterior chamado 'spot'
