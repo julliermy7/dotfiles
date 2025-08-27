@@ -110,11 +110,11 @@
         :orientation "horizontal"
         :space-evenly "false"
     (button :class "wifi-icon"
-            :onclick "~/.config/eww/scripts/wifi-menu.sh" wifi-strength)
-    (revealer :transition "slideright"
+            :onclick "nmgui" wifi-strength)
+    (revealer :transition "slideleft"
               :reveal wifi
               :duration "300ms"
-              (button :onclick "~/.config/eww/scripts/wifi-menu.sh"
+              (button :onclick "nmgui"
               (label  :class "wifi-label"
                       :text current-wifi))))))
 
