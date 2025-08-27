@@ -5,7 +5,7 @@
         :orientation "vertical"
         :space-evenly "false"
     (button :class "wifi-icon-control"
-            :onclick "~/.config/eww/scripts/wifi-menu.sh" wifi-strength))))
+            :onclick "nmgui" wifi-strength))))
 
 ;; Volume ;;
 (defwidget volume-control []
