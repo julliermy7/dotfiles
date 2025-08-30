@@ -31,6 +31,9 @@ wal-telegram &
 # Chromium theme
 ~/dotfiles/wal/scripts/pywalium/generate.sh
 
+# Tema Firefox
+pywalfox update
+
 # Tema GTK
 oomox-cli -o "pywal-gtk" ~/.cache/wal/colors-oomox
 gsettings set org.gnome.desktop.interface gtk-theme "pywal-gtk"
