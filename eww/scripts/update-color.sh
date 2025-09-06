@@ -34,6 +34,9 @@ wal-telegram &
 # Tema Firefox
 pywalfox update
 
+# Sway notifications
+swaync-client --reload-config
+
 # Tema GTK
 oomox-cli -o "pywal-gtk" ~/.cache/wal/colors-oomox
 gsettings set org.gnome.desktop.interface gtk-theme "pywal-gtk"
