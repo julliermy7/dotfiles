@@ -10,6 +10,10 @@
 @define-color bg-selected @color2;
 @define-color shade-lighter rgba(255, 255, 255, 0.1);
 
+* {
+  font-family: Iosevka, monospace;
+}
+
 .testing {
   background-color: red;
 }
@@ -22,7 +26,12 @@
 }
 
 .notification-row:hover {
-  background: @color1;
+  background: none;
+}
+
+.notification:hover {
+  background: @noti-bg-hover;
+  opacity: 0.9;
 }
 
 .control-center .notification-row:focus,
@@ -60,7 +69,7 @@
 .notification-content {
   background: @noti-bg;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 1x;
 }
 
 .close-button {
