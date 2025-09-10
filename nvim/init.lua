@@ -11,8 +11,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 vim.opt.clipboard = "unnamedplus"
+-- Defina a barra de espaço como a sua tecla leader
+vim.g.mapleader = ' '
 
-require("vim-options")
+-- Navegar entre buffers
+vim.keymap.set('n', '[b', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', ']b', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
+
 require("lazy").setup("plugins")
 
 

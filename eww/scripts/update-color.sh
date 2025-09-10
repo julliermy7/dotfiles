@@ -35,6 +35,8 @@ wal-telegram &
 pywalfox update
 
 # Sway notifications
+pkill swaync &
+swaync &
 swaync-client --reload-config
 
 # Tema GTK

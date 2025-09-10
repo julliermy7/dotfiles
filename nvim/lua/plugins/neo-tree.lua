@@ -9,10 +9,10 @@ return {
   },
   config = function()
     -- Neotree Keymap
-    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>")
+    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
     require("neo-tree").setup({
       window = {
-        position = "right",
+        position = "left",
         width = 25,
         mappings = {},
       },

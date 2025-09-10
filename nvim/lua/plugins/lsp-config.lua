@@ -1,4 +1,3 @@
--- LSP Config with Mason and Mason-LSPConfig
 return {
   {
     "williamboman/mason.nvim",
@@ -34,7 +33,7 @@ return {
       -- JSON
       lspconfig.jsonls.setup({ capabilities = capabilities })
 
-      -- Java (if needed)
+      -- Java
       lspconfig.jdtls.setup({ capabilities = capabilities })
 
       -- Prisma LS
