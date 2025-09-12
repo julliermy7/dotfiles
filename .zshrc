@@ -28,6 +28,8 @@ alias speed="speedtest-cli"
 alias y="yazi"
 alias up="sudo pacman -Syu"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias start-xampp="sudo /opt/lampp/xampp start"
+alias stop-xampp="sudo /opt/lampp/xampp stop"
 
 # Remove qualquer alias anterior chamado 'spot'
 unalias spot 2>/dev/null
