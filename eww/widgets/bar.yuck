@@ -31,11 +31,11 @@
                 :space-evenly "true"
                 :spacing "16"
             (button :class "prev"
-                    :onclick "mpc prev" "")
+                :onclick "playerctl previous" "")
             (button :class "pause"
-                    :onclick "mpc toggle" "")
+                :onclick "playerctl play-pause" "")
             (button :class "next"
-                    :onclick "mpc next" "")))))))
+                :onclick "playerctl next" "")))))))
 
 
 ;; button test ;;
