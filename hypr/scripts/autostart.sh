@@ -4,6 +4,9 @@
 vesktop &
 disown
 
+kdeconnect-indicator &
+disown
+
 # Configura MPD
 mpc crossfade 7
 

@@ -26,6 +26,7 @@
         "memory",
         "disk",
         "packages",
+        "gamepad",
         "uptime",
         {
             "type": "colors",
