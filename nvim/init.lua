@@ -25,8 +25,6 @@ end
 -- Mapeamento de tecla (F5)
 vim.api.nvim_set_keymap("n", "<F5>", ":lua RunJava()<CR>", { noremap = true, silent = true })
 
-
-
 vim.opt.rtp:prepend(lazypath)
 vim.opt.number = true
 vim.opt.clipboard = "unnamedplus"
