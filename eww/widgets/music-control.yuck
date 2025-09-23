@@ -29,11 +29,11 @@
            :space-evenly "true"
            :spacing "24"
         (button :class "prev-widget"
-                :onclick "mpc prev" "")
+                :onclick "playerctl previous" "")
         (button :class "pause-widget"
-                :onclick "mpc toggle" "")
+                :onclick "playerctl play-pause" "")
         (button :class "next-widget"
-                :onclick "mpc next" ""))))))
+                :onclick "playerctl next" ""))))))
 
 (defwindow music-window
   :monitor 0
