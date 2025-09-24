@@ -40,7 +40,7 @@ spot() {
   local SONG="$1"
   local ARTIST="$2"
   mkdir -p "$BASE_DIR/$ARTIST"
-  spotdl "${SONG} ${ARTIST}" --bitrate 320k --output "$BASE_DIR/$ARTIST"
+  spotdl "${SONG} ${ARTIST}" --bitrate 320k --output "$BASE_DIR/$ARTIST" 
 }
 
 # Função para baixar com yt-dlp
