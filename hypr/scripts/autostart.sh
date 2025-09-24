@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # Inicia aplicativos
-vesktop &
-disown
-
-kdeconnect-indicator &
-disown
+vesktop & disown
+kdeconnect-indicator & disown
 
 # Configura MPD
 mpc crossfade 7
