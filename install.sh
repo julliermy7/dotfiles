@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Habilitar o repositório 'extra' no pacman.conf
-echo "Habilitando o repositório 'extra' do Arch Linux..."
-sudo sed -i '/^#\[extra\]$/,/^Include = \/etc\/pacman.d\/mirrorlist$/s/^#//' /etc/pacman.conf
-
 # Pacotes necessários via pacman
 echo "Instalando pacotes via pacman..."
 sudo pacman -Syu --noconfirm # Atualiza a lista de pacotes
