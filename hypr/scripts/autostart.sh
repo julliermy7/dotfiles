@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Inicia aplicativos
-vesktop & disown
 kdeconnect-indicator & disown
 
 # Configura MPD

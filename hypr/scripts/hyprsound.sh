@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOUND_WORKSPACE_CHANGE="$HOME/.config/hypr/sound/change_workspace.wav"
+SOUND_WORKSPACE_CHANGE="$HOME/.config/hypr/sound/change_workspace1.wav"
 SOUND_WINDOW_OPEN="$HOME/.config/hypr/sound/add.wav"
 SOUND_WINDOW_CLOSE="$HOME/.config/hypr/sound/remove.wav"
 SOUND_FULLSCREEN_ENTER="$HOME/.config/hypr/sound/fullscreen.wav"
