@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/julliermy/wallpapers/152.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0604",
+        "foreground": "#ded7ca",
+        "cursor": "#ded7ca"
+    },
+    "colors": {
+        "color0": "#0d0604",
+        "color1": "#935C2D",
+        "color2": "#9F7154",
+        "color3": "#B49456",
+        "color4": "#D3A870",
+        "color5": "#947F80",
+        "color6": "#D6B288",
+        "color7": "#ded7ca",
+        "color8": "#9b968d",
+        "color9": "#935C2D",
+        "color10": "#9F7154",
+        "color11": "#B49456",
+        "color12": "#D3A870",
+        "color13": "#947F80",
+        "color14": "#D6B288",
+        "color15": "#ded7ca"
+    }
+}

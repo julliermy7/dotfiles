@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/julliermy/wallpapers/137.jpg"
+let background = "#0d0807"
+let foreground = "#c19c9f"
+let cursor     = "#c19c9f"
+
+" Colors
+let color0  = "#0d0807"
+let color1  = "#9C1519"
+let color2  = "#91282E"
+let color3  = "#B0262C"
+let color4  = "#F41A1B"
+let color5  = "#F41D22"
+let color6  = "#D22024"
+let color7  = "#c19c9f"
+let color8  = "#876d6f"
+let color9  = "#9C1519"
+let color10 = "#91282E"
+let color11 = "#B0262C"
+let color12 = "#F41A1B"
+let color13 = "#F41D22"
+let color14 = "#D22024"
+let color15 = "#c19c9f"
