@@ -32,8 +32,8 @@ window {
     spacing:                      0px;
     padding:                      10px;
     margin:                       0px; 
-    border:                       0px;
-    border-color:                 transparent;
+    border:                       3px;
+    border-color:                 @active-background;
     cursor:                       "default";
     transparency:                 "real";
     location:                     center;
