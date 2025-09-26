@@ -18,6 +18,16 @@
   background-color: red;
 }
 
+.notification-row content {
+    background-color: rgba(0, 0, 0, 0); /* 0% de opacidade */
+    /* Mantenha suas outras configurações de cor de texto, bordas, etc. */
+}
+
+window#notification-window {
+    background-color: #222222;
+    border-radius: 12px;
+}
+
 .notification-row {
   transition: all 200ms ease;
   outline: none;

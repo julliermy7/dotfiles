@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Habilitar o repositório 'extra' no pacman.conf
-echo "Habilitando o repositório 'extra' do Arch Linux..."
-sudo sed -i '/^#\[extra\]$/,/^Include = \/etc\/pacman.d\/mirrorlist$/s/^#//' /etc/pacman.conf
-
 # Pacotes necessários via pacman
 echo "Instalando pacotes via pacman..."
 sudo pacman -Syu --noconfirm # Atualiza a lista de pacotes
@@ -21,108 +17,35 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 echo "Instalando com.github.themix_project.Oomox via Flatpak..."
 flatpak install flathub com.github.themix_project.Oomox -y
 
-# ------------------------------------
+# Criaçao dos links simbolicos
 
-# Diretório de dotfiles. Assumimos que o script está dentro dele.
-DOTFILES_DIR=$(pwd)
-echo "Diretório de dotfiles: $DOTFILES_DIR"
+# backup do hypr e do kitty
+mv ~/.config/hypr ~/.config/hypr.bak
+mv ~/.config/kitty ~/.config/kitty.bak
+mv ~/.cache/wal ~/.cache/wal.bak
 
-# Criar links simbólicos para as configurações
-echo "Criando links simbólicos para as configurações..."
+cp -r ~/dotfiles/.icons ~/.icons
 
-# Assegura que o diretório ~/.config exista
-mkdir -p "$HOME/.config"
-
-# Pastas de configuração que você listou
-FOLDERS_TO_LINK=("cava" "dunst" "eww" "fastfetch" "fontconfig" "hypr" "kitty" "nvim" "rmpc" "rofi" "scripts" "swaync" "wal" "yazi" "zathura")
-
-for folder in "${FOLDERS_TO_LINK[@]}"; do
-    SOURCE_PATH="$DOTFILES_DIR/$folder"
-    DEST_PATH="$HOME/.config/$folder"
-    
-    # Verifica se a pasta de origem existe
-    if [ -d "$SOURCE_PATH" ]; then
-        
-        # ❗ CORREÇÃO: Remove o diretório de destino se ele existir e NÃO for um link simbólico.
-        if [ -d "$DEST_PATH" ] && [ ! -L "$DEST_PATH" ]; then
-            echo "Aviso: Removendo pasta de configuração existente $folder..."
-            rm -rf "$DEST_PATH"
-        fi
-        
-        # Cria o link simbólico
-        ln -sfn "$SOURCE_PATH" "$DEST_PATH"
-        echo "Link criado: $DEST_PATH -> $SOURCE_PATH"
-    else
-        echo "A pasta $SOURCE_PATH não foi encontrada. Pulando..."
-    fi
-done
-
-# Criar links simbólicos para arquivos no diretório HOME (ex: .zshrc)
-echo "Criando links simbólicos para arquivos na pasta HOME..."
-FILES_TO_LINK=(".zshrc" ".zshenv" ".p10k.zsh")
-for file in "${FILES_TO_LINK[@]}"; do
-    SOURCE_PATH="$DOTFILES_DIR/$file"
-    DEST_PATH="$HOME/$file"
-    if [ -f "$SOURCE_PATH" ]; then
-        ln -sfn "$SOURCE_PATH" "$DEST_PATH"
-        echo "Link criado: $DEST_PATH -> $SOURCE_PATH"
-    else
-        echo "O arquivo $SOURCE_PATH não foi encontrado. Pulando..."
-    fi
-done
-
-# Criar link simbólico para a pasta 'wallpapers' na HOME
-echo "Criando link simbólico para a pasta 'wallpapers' na HOME..."
-if [ -d "$DOTFILES_DIR/wallpapers" ]; then
-    if [ -d "$HOME/wallpapers" ] && [ ! -L "$HOME/wallpapers" ]; then
-        echo "Aviso: Removendo pasta ~/wallpapers existente..."
-        rm -rf "$HOME/wallpapers"
-    fi
-    ln -sfn "$DOTFILES_DIR/wallpapers" "$HOME/wallpapers"
-    echo "Link criado: $HOME/wallpapers -> $DOTFILES_DIR/wallpapers"
-else
-    echo "A pasta de wallpapers não foi encontrada. Pulando..."
-fi
-
-# Criar link simbólico para os scripts na HOME
-echo "Criando link simbólico para a pasta 'scripts' na HOME..."
-if [ -d "$DOTFILES_DIR/scripts" ]; then
-    if [ -d "$HOME/scripts" ] && [ ! -L "$HOME/scripts" ]; then
-        echo "Aviso: Removendo pasta ~/scripts existente..."
-        rm -rf "$HOME/scripts"
-    fi
-    ln -sfn "$DOTFILES_DIR/scripts" "$HOME/scripts"
-    echo "Link criado: $HOME/scripts -> $DOTFILES_DIR/scripts"
-else
-    echo "A pasta de scripts não foi encontrada. Pulando..."
-fi
-
-# Criar link simbólico para o cache do wals na HOME
-echo "Criando link simbólico para a pasta 'wal' no cache..."
-if [ -d "$DOTFILES_DIR/.cache/wal" ]; then
-    # O destino precisa ser o diretório do link, não o diretório pai.
-    # O link será criado em ~/.cache/wal
-    if [ -d "$HOME/.cache/wal" ] && [ ! -L "$HOME/.cache/wal" ]; then
-        echo "Aviso: Removendo pasta de cache do pywal existente..."
-        rm -rf "$HOME/.cache/wal"
-    fi
-
-    ln -sfn "$DOTFILES_DIR/.cache/wal" "$HOME/.cache/wal"
-    echo "Link criado: $HOME/.cache/wal -> $DOTFILES_DIR/.cache/wal"
-
-    # Criando o link para a pasta de cache, se realmente for necessário
-    # Nota: Geralmente o cache não precisa de link, a pasta do pywal sim.
-    # Se você tem configurações do pywal em uma pasta "wal" no seu dotfiles
-    # e deseja lincar para ~/.config/wal, o comando é:
-    # ln -sfn "$DOTFILES_DIR/wal" "$HOME/.config/wal"
-
-else
-    echo "A pasta de cache do pywal não foi encontrada. Pulando a criação do link..."
-fi
-
-
-# Instalar yay (AUR helper)
-# ... (Restante do script)
+ln -sf ~/dotfiles/hypr ~/.config/hypr
+ln -sf ~/dotfiles/swaync ~/.config/swaync
+ln -sf ~/dotfiles/rofi ~/.config/rofi
+ln -sf ~/dotfiles/fontconfig ~/.config/fontconfig
+ln -sf ~/dotfiles/rmpc ~/.config/rmpc
+ln -sf ~/dotfiles/cava ~/.config/cava
+ln -sf ~/dotfiles/eww ~/.config/eww
+ln -sf ~/dotfiles/nvim ~/.config/nvim
+ln -sf ~/dotfiles/kitty ~/.config/kitty
+ln -sf ~/dotfiles/fastfetch ~/.config/fastfetch
+ln -sf ~/dotfiles/wallpapers ~/wallpapers
+ln -sf ~/dotfiles/scripts ~/scripts
+ln -sf ~/dotfiles/yay ~/.config/yay
+ln -sf ~/dotfiles/yazi ~/.config/yazi
+ln -sf ~/dotfiles/dunst ~/.config/dunst
+ln -sf ~/dotfiles/zathura ~/.config/zathura
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -sf ~/dotfiles/.zshenv ~/.zshenv
+ln -sf ~/dotfiles/.cache/wal ~/.cache/
 
 # Instalar yay (AUR helper)
 echo "Instalando yay (AUR helper)..."
@@ -142,11 +65,16 @@ echo "Configurando Powerlevel10k..."
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 
-# Instalação do Eww
-echo "Instalando Eww..."
-cd $DOTFILES_DIR/eww
+# Eww installation
+cd $HOME
+curl --proto '=https' -- tlsv1.2 -sSf https://sh.rustup.rs | sh
+git clone https://github.com/elkowar/eww
+cd eww
 cargo build --release --no-default-features --features=wayland
-sudo cp target/release/eww /usr/local/bin/
+cd target/release
+chmod +x ./eww
+sudo cp ./eww /usr/local/bin/
+
 
 # Configuração do Network Manager
 echo "Configurando Network Manager e Bluetooth..."
